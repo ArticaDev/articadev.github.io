@@ -7,6 +7,10 @@ $(function () {
         }
     });
 
+    var ww = document.body.clientWidth;
+    if (ww < 991.98) {
+      $('.navbar').addClass('navbar-dark bg-dark');
+    };
 
 
   var walkthrough;
