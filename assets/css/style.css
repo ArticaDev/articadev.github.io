@@ -81,10 +81,10 @@ body
         overflow-x: hidden; 
     }
     .about p{
-        font-size: 18px;
+        font-size: 18px !important;
     }
     .about img {
-       max-width: 500px;
+       max-width: 400px !important;
     }
 }
 
