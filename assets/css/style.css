@@ -1,0 +1,337 @@
+/*
+*
+* ==========================================
+* CUSTOM CSS
+* ==========================================
+*
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+    body{
+        overflow-x: hidden; 
+    }
+}
+
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+.home, .about{
+    min-height: 100vh;
+}
+.home{
+    background-image: url('assets/img/backimg.png');
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+
+
+.about img{
+    
+    max-width: 600px;
+
+}
+.about p{
+    font-size: 24px;
+}
+
+.about,.services-and-contact h1{
+    text-align: center;
+}
+
+.services-and-contact{
+    color: white;
+    width: 100%;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #132437 0%, #122234 47%, #000000 100%) 0% 0% no-repeat padding-box;
+}
+
+.services-and-contact{
+    min-height: 200vh;
+}
+
+.services-and-contact img{
+    max-width: 200px;
+}
+
+
+.contact-form{
+    max-width: 500px;
+    padding: 0px;
+    border-bottom: 0;
+}
+
+
+
+/* Mobile service cards*/
+ .walkthrough {
+     border-radius: 0;
+     display: none;
+     flex-direction: column;
+     flex: 0 0 auto;
+     font-size: 14px;
+     height: 464px;
+     overflow: hidden;
+     width: 280px;
+     z-index: 1000;
+}
+ .walkthrough.show {
+     display: flex;
+     opacity: 0;
+     transform: translateY(72px);
+}
+ .walkthrough.reveal {
+     opacity: 1;
+     transform: translateY(0);
+}
+ .walkthrough .walkthrough-body {
+     align-items: center;
+     display: flex;
+     flex: 1;
+     text-align: center;
+}
+ .walkthrough .walkthrough-body .prev-screen, .walkthrough .walkthrough-body .next-screen {
+     align-self: stretch;
+     background: none;
+     border: 0;
+     margin-top: 40px;
+     color: rgba(255, 255, 255, 0.25);
+     cursor: pointer;
+     flex: 0 0 auto;
+     font-size: 24px;
+     opacity: 1;
+     outline: none;
+     padding: 16px;
+     transform: scale(1);
+     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+     z-index: 1000;
+}
+ .walkthrough .walkthrough-body .prev-screen:hover, .walkthrough .walkthrough-body .next-screen:hover, .walkthrough .walkthrough-body .prev-screen:active, .walkthrough .walkthrough-body .next-screen:active {
+     color: white;
+     transform-origin: center;
+     transform: scale(1.25);
+}
+ .walkthrough .walkthrough-body .prev-screen:disabled, .walkthrough .walkthrough-body .next-screen:disabled {
+     opacity: 0;
+}
+ .walkthrough .walkthrough-body .prev-screen {
+     order: 1;
+}
+ .walkthrough .walkthrough-body .next-screen {
+     order: 3;
+}
+ .walkthrough .walkthrough-body .screens {
+     flex: 1;
+     align-self: stretch;
+     position: relative;
+     margin: 0 -16px;
+     padding: 0;
+     order: 2;
+}
+ .walkthrough .walkthrough-body .screens .screen {
+     position: absolute;
+     list-style-type: none;
+}
+ .walkthrough .walkthrough-body .media {
+     border-radius: 132px;
+     margin: 32px auto;
+}
+ .walkthrough .walkthrough-body h3 {
+     font-size: 20px;
+     line-height: 1.4em;
+     text-transform: uppercase;
+     letter-spacing: 0.15em;
+     font-weight: bold;
+}
+ .walkthrough .walkthrough-body p {
+     line-height: 1.6em;
+     font-size: 16px;
+     margin-top: 16px;
+     padding-top: 0;
+}
+ .walkthrough .walkthrough-pagination {
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     margin-top: 24px;
+}
+ .walkthrough .walkthrough-pagination .dot {
+     background: rgba(0, 0, 0, 0.25);
+     border-radius: 8px;
+     height: 8px;
+     margin: 0 4px;
+     transform: scale(0.75);
+     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+     width: 8px;
+}
+ .walkthrough .walkthrough-pagination .dot.active {
+     background: white;
+     transform: scale(1);
+     transition-delay: 0.4s;
+}
+
+
+ .walkthrough .screens {
+     margin: 0;
+}
+ .walkthrough .screens .media .status-badge {
+     left: 136px;
+     opacity: 0;
+     position: absolute;
+     top: 104px;
+     transform: scale(0);
+     transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+     transition-delay: 0.6s;
+}
+ .walkthrough .screens .media .status-badge i {
+     display: inline;
+}
+ .walkthrough .screens .media.logo .logo {
+     opacity: 0;
+     transform: translateY(-60px);
+     transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+     width: 180px;
+}
+ .walkthrough .screens .media .icon {
+     position: absolute;
+     opacity: 0;
+     transform: translateY(-30px);
+     transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+     width: 132px;
+     left: 48px;
+     top: 32px;
+}
+ .walkthrough .screens .media.bars .icon {
+     transform: translate(40px, 20px);
+}
+ .walkthrough .screens .media.bars .icon:nth-of-type(2) {
+     transform: scale(0.25);
+     transform-origin: 30% 54%;
+}
+ .walkthrough .screens .media.bars .icon:nth-of-type(3) {
+     transform: scale(0.25);
+     transform-origin: 30% 40%;
+}
+ .walkthrough .screens .media.bars .icon:nth-of-type(4) {
+     transform: scale(0.25);
+     transform-origin: 30% 26%;
+}
+ .walkthrough .screens .media.files .icon {
+     transform: translate(40px, 20px);
+}
+ .walkthrough .screens .media.comm .icon {
+     transform: scale(0.25);
+     transform-origin: 29% 73%;
+}
+ .walkthrough .screens .media.comm .icon:nth-child(2) {
+     transform-origin: 66% 85%;
+}
+ .walkthrough .screens .screen {
+     opacity: 0;
+     position: absolute;
+     transform: translateX(-72px);
+     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+ .walkthrough .screens .screen.active {
+     opacity: 1;
+     transform: translateX(0) scale(1);
+     transition-delay: 0.4s;
+}
+ .walkthrough .screens .screen.active ~ .screen {
+     opacity: 0;
+     transform: translateX(72px);
+}
+ .walkthrough .screens .screen.active .media .status-badge {
+     opacity: 1;
+     transform: scale(1.75);
+}
+ .walkthrough .screens .screen.active .media.logo .logo {
+     opacity: 0.8;
+     transform: translateY(0);
+     transition-delay: 0.6s;
+}
+ .walkthrough .screens .screen.active .media.logo .status-badge {
+     transition-delay: 1s;
+}
+
+ 
