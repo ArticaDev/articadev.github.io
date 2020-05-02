@@ -99,7 +99,7 @@ body
     min-height: 100vh;
 }
 .home{
-    background-image: url('assets/img/backimg.png');
+    background-image: url('../img/backimg.png');
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
