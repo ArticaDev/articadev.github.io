@@ -80,6 +80,12 @@ body
     body{
         overflow-x: hidden; 
     }
+    .about p{
+        font-size: 18px;
+    }
+    .about img {
+       max-width: 500px;
+    }
 }
 
 
