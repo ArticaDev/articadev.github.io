@@ -142,9 +142,9 @@ body
      flex-direction: column;
      flex: 0 0 auto;
      font-size: 14px;
-     height: 600px;
+     height: 800px;
      overflow: hidden;
-     width: 280px;
+     width: 300px;
      z-index: 1000;
 }
  .walkthrough.show {
