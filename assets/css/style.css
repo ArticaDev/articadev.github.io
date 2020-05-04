@@ -173,6 +173,9 @@ transition: 0.4s;
     border-bottom: 0;
 }
 
+.subbtn{
+  cursor: default;
+}
 
 /* Mobile service cards*/
 
