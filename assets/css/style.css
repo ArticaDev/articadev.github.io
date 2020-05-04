@@ -26,10 +26,12 @@ body {
 
 .navbar {
     transition: all 0.4s;
+
 }
 
 .navbar .nav-link {
     color: #fff;
+    cursor: pointer;
 }
 
 .navbar .nav-link:hover,
@@ -103,14 +105,53 @@ body {
     text-align: center;
 }
 
-.icone{
+.linkedin{
   opacity: 100%;
-  transition: 1s;
+  transition: 0.4s;
 }
-.icone:hover{
+.linkedin:hover{
   opacity: 70%;
-  transition: 1s;
+  transition: 0.4s;
 }
+
+.linkedin:active{
+  transform: scale(0.9);
+  transition: 0.4s smooth;
+}
+
+.email{
+color: #ff304f;
+transition: 0.4s;
+}
+
+.email:hover{
+  cursor: pointer;
+  opacity: 80%;
+  transition: 0.4s;
+}
+
+.email:active{
+  transform: scale(0.9);
+  transition: 0.4s smooth;
+}
+
+/** Animações e cores para o logo do whatsapp
+.whats{
+  color: #25D366;
+  transition: 0.4s;
+}
+
+.whats:hover{
+  cursor: pointer;
+  opacity: 80%;
+  transition: 0.4s;
+}
+
+.whats:active{
+  transform: scale(0.9);
+  transition: 0.4s smooth;
+}
+**/
 
 .services-and-contact {
     color: white;

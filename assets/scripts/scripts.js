@@ -28,6 +28,7 @@ $(function() {
         input.select();
         document.execCommand('copy');
         document.body.removeChild(input);
+        alert("Nosso email foi copiado para sua área de transferência! :)")
     });
 
     $('.form-group input, .contact-form textarea').on('keyup', function() {
