@@ -9,17 +9,9 @@ $(function() {
 
     $('.navbar-nav li a').click(function() {
 
-        const element = document.getElementById($(this).data('section'));
-        const offset = 100;
-        const bodyRect = document.body.getBoundingClientRect().top;
-        const elementRect = element.getBoundingClientRect().top;
-        const elementPosition = elementRect - bodyRect;
-        const offsetPosition = elementPosition - offset;
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
+        $('html, body').animate({
+            scrollTop: $('#' + $(this).data('section')).offset().top - 100
+        }, "100");
 
     });
 
