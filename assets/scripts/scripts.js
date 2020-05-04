@@ -10,7 +10,7 @@ $(function() {
     $('.navbar-nav li a').click(function() {
 
         $('html, body').animate({
-            scrollTop: $('#' + $(this).data('section')).offset().top - 100
+            scrollTop: Math.abs($('#home-section').offset().top) + $('#' + $(this).data('section')).offset().top - 100
         }, "100");
 
     });
