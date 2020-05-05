@@ -135,7 +135,7 @@ transition: 0.4s;
   transition: 0.4s smooth;
 }
 
-/** Animações e cores para o logo do whatsapp
+/** Animações e cores para o logo do whatsapp**/
 .whats{
   color: #25D366;
   transition: 0.4s;
@@ -151,7 +151,7 @@ transition: 0.4s;
   transform: scale(0.9);
   transition: 0.4s smooth;
 }
-**/
+
 
 .services-and-contact {
     color: white;
