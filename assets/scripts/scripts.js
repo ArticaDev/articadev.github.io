@@ -29,7 +29,14 @@ $(function() {
         document.execCommand('copy');
         document.body.removeChild(input);
         alert("Nosso email foi copiado para sua área de transferência! :)")
+        /* FIX ME, changing dinamically the tooltip.
+
+        $('[data-toggle="tooltip"]').attr('data-original-title', "O nosso email foi copiado :)")
+              .tooltip('fixTitle')
+              .tooltip('update');*/
     });
+
+
 
     $('.form-group input, .contact-form textarea').on('keyup', function() {
         let empty = false;
@@ -46,6 +53,11 @@ $(function() {
             $('.contact-form button').attr('disabled', false);
         }
     });
+
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
 
     var walkthrough;
     walkthrough = {

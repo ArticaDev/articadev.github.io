@@ -110,7 +110,7 @@ body {
   transition: 0.4s;
 }
 .linkedin:hover{
-  opacity: 70%;
+  opacity: 80%;
   transition: 0.4s;
 }
 
@@ -126,7 +126,7 @@ transition: 0.4s;
 
 .email:hover{
   cursor: pointer;
-  opacity: 80%;
+  opacity: 70%;
   transition: 0.4s;
 }
 
@@ -143,7 +143,7 @@ transition: 0.4s;
 
 .whats:hover{
   cursor: pointer;
-  opacity: 80%;
+  opacity: 70%;
   transition: 0.4s;
 }
 
