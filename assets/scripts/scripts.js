@@ -1,4 +1,7 @@
 $(function() {
+
+    $('[data-toggle="tooltip"]').tooltip();
+
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 10) {
             $('.navbar').addClass('active');
@@ -28,12 +31,12 @@ $(function() {
         input.select();
         document.execCommand('copy');
         document.body.removeChild(input);
-        alert("Nosso email foi copiado para sua área de transferência! :)")
-        /* FIX ME, changing dinamically the tooltip.
 
-        $('[data-toggle="tooltip"]').attr('data-original-title', "O nosso email foi copiado :)")
-              .tooltip('fixTitle')
-              .tooltip('update');*/
+
+        $('#emailIcon[data-toggle="tooltip"]').attr('data-original-title', "O nosso email foi copiado :)")
+            .tooltip('dispose')
+            .tooltip('show');
+
     });
 
 
@@ -53,11 +56,6 @@ $(function() {
             $('.contact-form button').attr('disabled', false);
         }
     });
-
-    $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-
 
     var walkthrough;
     walkthrough = {
